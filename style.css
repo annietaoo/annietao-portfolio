@@ -1,0 +1,945 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  height: auto;
+  min-height: 100%;
+}
+
+h4 {
+  margin-top: 0px  !important;
+  margin-bottom: 0px !important;
+  color: white !important;
+  text-transform: uppercase;
+  font-size: 50px !important;
+}
+
+p {
+  font-size: 18px !important;
+  color: #ffffff !important;
+}
+
+ul {
+  list-style-type: none !important;
+  color: #ffffff;
+  text-align: left;
+  width: 30%;
+  display: inline-block;
+  padding: 0 !important; /* To remove default left padding */
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  z-index: 50;
+  position: fixed;
+  text-align: center;
+}
+
+nav .navigation-links{
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+nav ul li {
+  display: inline-block !important;;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans", sans-serif !important;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+
+.banner {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.parallax-container {
+  width: 100%;
+  display: block;
+  height: 1250px;
+  overflow: hidden !important;
+}
+
+.background, .layer-1, .layer-2, .layer-3, .layer-4, .layer-5, .layer-6, .layer-7, .layer-8, .layer-9, .layer-10, .layer-11, .layer-12 {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 1300px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.background, .layer-1, .layer-2, .layer-3, .layer-4, .layer-5, .layer-6, .layer-7, .layer-8, .layer-9, .layer-10 {
+  top: 0;
+  left: 0;
+}
+
+.background {
+  background: linear-gradient(rgba(51,114,255,1), rgba(81,197,255,1), white);
+  z-index: 1;
+}
+
+.layer-1 {
+  background-image: url("Assets/layer-1.png");
+  z-index: 12;
+}
+
+.layer-2 {
+  background-image: url("Assets/layer-2.png");
+  z-index: 11;
+}
+
+.layer-3 {
+  background-image: url("Assets/layer-3.png");
+  z-index: 10;
+}
+
+.layer-4 {
+  background-image: url("Assets/layer-4.png");
+  z-index: 9;
+}
+
+.layer-5 {
+  background-image: url("Assets/layer-5.png");
+  z-index: 8;
+}
+
+.layer-6 {
+  background-image: url("Assets/layer-6.png");
+  z-index: 7;
+}
+
+.layer-7 {
+  background-image: url("Assets/layer-7.png");
+  z-index: 6;
+}
+
+.layer-8 {
+  background-image: url("Assets/layer-8.png");
+  z-index: 5;
+}
+
+.layer-9 {
+  background-image: url("Assets/layer-9.png");
+  z-index: 4;
+}
+
+.layer-10 {
+  background-image: url("Assets/layer-10.png");
+  z-index: 3;
+}
+
+.layer-11 {
+  z-index: 14;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.layer-11 h1 {
+  font-size: 90px !important;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-top: -95px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 0px 5px #333333;
+  width: 100%;
+  text-align: center;
+}
+
+.layer-12 {
+  z-index: 13;
+}
+
+.layer-12 p {
+  font-size: 30px !important;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 0px 5px #333333;
+  width: 100%;
+  text-align: center;
+}
+
+.transition {
+  position: relative;
+}
+
+.transition-gradient {
+  background: linear-gradient(rgba(4,30,11,1), rgba(0,0,0,1));
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  position: relative;
+  margin-top: -8%;
+}
+
+.about-me {
+  position: relative;
+  z-index: 99;
+}
+
+.about-me-content {
+  margin:0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 2000px;
+  padding-top: 17%;
+  text-align: center;
+  opacity: 0;
+}
+
+.profile-picture {
+  background-image: url("Assets/profile-pic.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.about-me-description {
+  display: inline-block;
+  width: 45%;
+  height: 500px;
+  padding-left: 150px;
+  padding-top: 35px;
+  text-align: justify !important;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.about-me-description h4 {
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 30px;
+  color: #cc5500 !important;
+  font-weight: 700;
+}
+
+.about-me-description p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.skillset, .portfolio {
+  position: relative;
+  background-color: black;
+  text-align: center;
+  padding-top: 7%;
+  width: 100%;
+}
+
+.skillset-content {
+  max-width: 1800px;
+  opacity: 0;
+  margin:0 auto;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.skillset-description {
+  display: inline-block;
+  width: 45%;
+  height: 900px;
+  padding-right: 5%;
+  padding-top: 75px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.skillset-description h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: #008080 !important;
+  font-weight: 700;
+  text-align: right;
+  padding-bottom: 30px;
+}
+
+.skillset-description p {
+  text-align: justify;
+  padding-bottom: 10px;
+
+}
+
+#morphing {
+  display: inline-block;
+}
+
+#morphing svg {
+  width: 750px;
+  height: 870px;
+}
+
+.p {
+  fill: white;
+}
+
+.polymorph {
+  stroke: white;
+}
+
+ul p {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left !important;
+}
+
+#web-tech p {
+  color: #800020 !important;
+}
+
+#general-programming p {
+  color: #7955A0 !important;
+}
+
+#art-design-writing p {
+  color: #a96a9c !important;
+}
+
+#soft-skills p {
+  color: #435d97 !important;
+}
+
+#misc p {
+  color: #cc5500 !important;
+}
+
+.web-tech:hover, .general-programming:hover, .art-design-writing:hover, .soft-skills:hover, .misc:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.web-tech-svg-text {
+  float: right;
+  width: 600;
+  height: 690;
+}
+
+.web-tech-label, .gen-prgm-label, .adw-label, .sft-skills-label, .misc-label {
+  display: none;
+}
+
+.portfolio-content {
+  opacity: 0;
+  padding-bottom: 250px;
+}
+
+.portfolio-description {
+}
+
+.portfolio-description h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: #8EB69B !important;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+.portfolio-grid {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.project {
+  display: inline-block;
+  width: 20%;
+  background-size: cover;
+  border-radius: 5px;
+  background-position: center;
+  position: relative;
+}
+
+.project-preview {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  transition: all 0.3s ease;
+}
+
+.project-preview h4, .project-preview p {
+  opacity: 0;
+  transition: all 0.3s ease;
+  padding: 20% 10% 0% 10%;;
+}
+
+.project-preview h4 {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 40px !important;
+  font-weight: 800;
+  height: 150px;
+}
+
+.project-preview:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.project-preview:hover h4, .project-preview:hover p{
+  opacity: 1;
+}
+
+
+.project:nth-of-type(1) {
+  background-image: url("Assets/keslv1prev.png");
+}
+
+.project:nth-of-type(2) {
+  background-image: url("Assets/keslv2prev.png");
+}
+
+.project:nth-of-type(3) {
+  background-image: url("Assets/ptcprev.png");
+}
+
+.project:nth-of-type(4) {
+  background-image: url("Assets/portfolioprev.png");
+}
+
+footer {
+  background-color: black;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.contact-container:nth-of-type(2) {
+  padding-top: 20px;
+  width:80%;
+}
+
+hr {
+  border-top: 1px solid #fff; 
+  width: 30%;
+  margin: 0 !important;
+  background-color: black;
+  display: inline-block;
+  vertical-align: 10px;
+}
+.contact-me-title {
+  background-color: black;
+  width: 25%;
+}
+
+.contact-me-title{
+  display: inline-block;
+}
+
+.contact-me-title h4{
+  background-color: black;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 40px !important;
+  font-weight: 600;
+}
+
+.logo {
+  width: 30%;
+  display: inline-block;
+}
+
+.logo img {
+  height: 300px;
+}
+
+.contact-info-container {
+  display: inline-block;
+}
+
+.email-phone {
+  display: inline-block;
+}
+
+.email-phone p {
+  line-height: 10px;
+  letter-spacing: 1px;
+  text-align: left !important;
+}
+
+.social-media {
+  display: inline-block;
+  text-align: right;
+}
+
+#sm-icons {
+  width: 100%;
+}
+
+#sm-icons li {
+  display: inline-block;
+}
+
+.facebook svg, .instagram svg, .linkedin svg, .github svg, .twitter svg {
+  width: 70px;
+  height: 70px;
+  fill: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.angellist svg {
+  width: 45px;
+  height: 45px;
+  fill: #ffffff;
+}
+
+.facebook:hover svg {
+  background-color: #3b5998;
+  border-radius: 5px;
+}
+
+.github:hover svg {
+  fill: #000000;
+  background-color: white;
+  border-radius:5px;
+}
+
+.instagram:hover svg {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  border-radius: 5px;
+}
+
+.linkedin:hover svg {
+  background-color: #4875B4;
+  border-radius: 5px;
+}
+
+.twitter:hover svg {
+  background-color: #33CCFF;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 599px) {
+  nav ul li a {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .parallax-container {
+    height: 450px;
+  }
+  
+  .background, .layer-1, .layer-2, .layer-3, .layer-4, .layer-5, .layer-6, .layer-7, .layer-8, .layer-9, .layer-10, .layer-11, .layer-12 {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+  .layer-11 h1 {
+    margin-top: -18%;
+    font-size: 40px !important;
+  }
+  .layer-12 p {
+    margin-top: -10%;
+    font-size: 20px !important;
+  }
+  #web-tech, #general-programming, #art-design-writing, #soft-skills, #misc {
+    width: 95% !important;
+    margin: 0 auto;
+    vertical-align: top;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  #web-tech p, #general-programming p, #art-design-writing p, #soft-skills p, #misc p {
+    text-align: center !important;
+  }
+  .project {
+    width: 95% !important;
+    height: 270px !important;
+    padding-bottom: 15px !important;
+  }
+  .project-preview {
+    height: 270px !important;
+  }
+  
+  .project-preview h4{
+    font-size: 30px !important;
+  }
+  .contact-container:nth-of-type(2){
+    width: 100%;
+    margin: 0 auto;
+  }
+  .logo {
+    position: relative;
+    margin-left: -50px;
+  }
+  .contact-info-container {
+    position: relative;
+    margin-left: 50px;
+  }
+  hr {
+    width: 100%;
+  }
+  .contact-me-title {
+    display: none !important;
+  }
+  .facebook svg, .instagram svg, .linkedin svg, .github svg, .twitter svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  nav ul li a {
+    padding: 12px;
+    font-size: 12px;
+  }
+  .parallax-container {
+    height: 570px;
+  }
+  
+  .background, .layer-1, .layer-2, .layer-3, .layer-4, .layer-5, .layer-6, .layer-7, .layer-8, .layer-9, .layer-10, .layer-11, .layer-12 {
+    height: 670px;
+  }
+  .layer-11 h1 {
+    margin-top: -25%;
+    font-size: 50px !important;
+  }
+  .layer-12 p {
+    margin-top: -20%;
+    font-size: 20px !important;
+  }
+  .project {
+    width: 70% !important;
+    height: 370px !important;
+    padding-bottom: 15px !important;
+  }
+  .project-preview {
+    height: 370px !important;
+  }
+  
+  .project-preview h4{
+    font-size: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  
+  
+  #web-tech, #general-programming, #art-design-writing, #soft-skills, #misc {
+    width: 45%;
+    margin: 0 auto;
+    vertical-align: top;
+  }
+  #web-tech li, #general-programming li, #art-design-writing li, #soft-skills li, #misc li {
+    font-size: 14px !important;
+  }
+ 
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .parallax-container {
+    height: 900px;
+  }
+  
+  .background, .layer-1, .layer-2, .layer-3, .layer-4, .layer-5, .layer-6, .layer-7, .layer-8, .layer-9, .layer-10, .layer-11, .layer-12 {
+    height: 1000px;
+  }
+  .layer-11 h1 {
+    margin-top: -23%;
+  }
+  .layer-12 p {
+    margin-top: -15%;
+  }
+  .project {
+    width: 35%;
+    height: 170px;
+  }
+  .project-preview {
+    height: 170px;
+  }
+  
+  .project-preview h4{
+    font-size: 20px !important;
+  }
+  
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  h4 {
+    font-size: 33px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+
+  .about-me-content {
+    padding-top: 75px !important;
+  }
+  
+  .profile-picture {
+    display: block;
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
+  }
+  
+  .about-me-description {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .about-me-descriptiong h4, .skillset-description h4, .portfolio-description h4 {
+    padding-bottom: 10px;
+  }
+  .about-me-description h4 {
+    padding-top: 25px;
+    text-align: center !important;
+  }
+  .about-me-description p {
+    text-align: justify !important;
+  }
+  
+  .skillset, .portfolio {
+    padding-top: 75px;
+  }
+  
+  .skillset-description {
+    padding: 0;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    height: auto;
+    padding-bottom: 250px;
+  }
+  
+  .skillset-description h4 {
+    text-align: center !important;
+  }
+  .skillset-description p {
+    padding-bottom: 5px;
+    margin-bottom: 0 !important;
+  }
+  
+  #web-tech li, #general-programming li, #art-design-writing li, #soft-skills li, #misc li {
+    font-size: 12px !important;
+  }
+  
+  #morphing {
+    display: none;
+  }
+  
+  .portfolio-description p {
+    margin: 0 !important;
+  }
+  
+  .portfolio-grid {
+    padding-top: 10px;
+  }
+  
+  .portfolio-content {
+    width: 75%;
+    margin: 0 auto;
+  }
+  
+  .project-preview p {
+    display: none;
+  }
+  .contact-me-title:nth-of-type(1)  h4 {
+    font-size: 30px !important;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+  .about-me-content {
+    padding-bottom: 30px;
+  }
+  
+  .parallax-container {
+    height: 900px;
+  }
+  
+  .background, .layer-1, .layer-2, .layer-3, .layer-4, .layer-5, .layer-6, .layer-7, .layer-8, .layer-9, .layer-10, .layer-11, .layer-12 {
+    height: 1000px;
+  }
+  .skillset-description {
+    padding-top: 0px;
+    padding-right: 0px;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .skillset-description h4 {
+    text-align: center;
+  }
+  .skillset-description p {
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  ul {
+    width: auto;
+  }
+  #morphing {
+    margin-top: -65px;
+  }
+  #morphing svg{
+    width: 425px !important;
+    height: 525px !important;
+  }
+  .facebook svg, .instagram svg, .linkedin svg, .github svg, .twitter svg {
+    width: 50px;
+    height: 50px;
+  }
+  .email-phone {
+    display:block;
+    padding-bottom: 20px;
+  }
+  .email-phone p {
+    text-align: center !important;
+  }
+  .social-media {
+    display:block;
+    text-align: center;
+  }
+  .contact-info-container {
+    padding-left: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+  .logo img {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .facebook svg, .instagram svg, .linkedin svg, .github svg, .twitter svg {
+    width: 50px;
+    height: 50px;
+  }
+  .email-phone {
+    display:block;
+    padding-bottom: 20px;
+  }
+  .email-phone p {
+    text-align: center !important;
+  }
+  .social-media {
+    display:block;
+    text-align: center;
+  }
+  .contact-info-container {
+    padding-left: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+  .logo img {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1599px) {
+  h4 {
+    font-size: 35px !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  #web-tech li, #general-programming li, #art-design-writing li, #soft-skills li, #misc li {
+    font-size: 12px !important;
+  }
+  .about-me-description {
+    padding-left: 3%;
+  }
+  .project-preview h4 {
+    font-size: 30px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  
+  .parallax-container {
+    height: 1200px;
+  }
+  
+  .background, .layer-1, .layer-2, .layer-3, .layer-4, .layer-5, .layer-6, .layer-7, .layer-8, .layer-9, .layer-10, .layer-11, .layer-12 {
+    height: 1300px;
+  }
+  .layer-11 h1 {
+    margin-top: -20%;
+  }
+  .layer-12 p {
+    margin-top: -16%;
+  }
+  #morphing {
+    padding-top: 3%;
+  }
+  #morphing svg{
+    width: 550px !important;
+    height: 670px !important;
+  }
+  .facebook svg, .instagram svg, .linkedin svg, .github svg, .twitter svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1899px) {
+  .parallax-container {
+    height: 1300px;
+  }
+  
+  .background, .layer-1, .layer-2, .layer-3, .layer-4, .layer-5, .layer-6, .layer-7, .layer-8, .layer-9, .layer-10, .layer-11, .layer-12 {
+    height: 1400px;
+  }
+  .layer-11 h1 {
+    margin-top: -17%;
+  }
+  .layer-12 p {
+    margin-top: -14%;
+  }
+  .portfolio {
+    padding-top: 12%;
+    padding-bottom: 150px;
+  }
+  .project-preview {
+    height: 750px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+    .parallax-container {
+    height: 1400px;
+  }
+  
+  .background, .layer-1, .layer-2, .layer-3, .layer-4, .layer-5, .layer-6, .layer-7, .layer-8, .layer-9, .layer-10, .layer-11, .layer-12 {
+    height: 1500px;
+  }
+  
+  .layer-11 h1 {
+    margin-top: -12%;
+  }
+  .layer-12 p {
+    margin-top: -9%;
+  }
+}
